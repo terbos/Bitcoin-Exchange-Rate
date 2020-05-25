@@ -1,0 +1,43 @@
+Bitcoin Exchange Rate Program
+-----------------------------
+
+Using the CURL library ( https://curl.haxx.se/ ) for network request of the following
+bitcoin exchange rate: https://blockchain.info/ticker
+
+The information is presented in JSON format.
+
+Use of the nlohmann JSON library (https://github.com/nlohmann/json) is necessary to
+handle json data format.
+
+The program will eventually print the current exchange rate:
+1 BTC = 
+        (AUD)     13461 $
+        (BRL)     48247 R$
+        (CAD)     12315 $
+        (CHF)      8555 CHF
+        (CLP)   7076139 $
+        (CNY)     62882 ¥
+        (DKK)     60299 kr
+        (EUR)      8103 €
+        (GBP)      7226 £
+        (HKD)     68324 $
+        (INR)    668162 ₹
+        (ISK)   1249316 kr
+        (JPY)    950474 ¥
+        (KRW)  10938410 ₩
+        (NZD)     14442 $
+        (PLN)     36414 zł
+        (RUB)    630772 RUB
+        (SEK)     85260 kr
+        (SGD)     12549 $
+        (THB)    281600 ฿
+        (TRY)     60045 ₺
+        (TWD)    264886 NT$
+        (USD)      8811 $
+=============================================
+INFORMATION:
+  1. Developed in Linux Ubundu 20.04
+  2. Developed in Visual Studio Code
+  3. Download library for JSON handling from: https://github.com/nlohmann/json/tree/develop/single_include/nlohmann
+  4. Download libcurl-dev package for your OS from here: https://curl.haxx.se/
+  5. Compile command used: g++ --std=c++17 bitcoin.cpp -o bitcoin -lcurl
